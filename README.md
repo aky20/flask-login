@@ -40,6 +40,17 @@ login_manager.init_app(app)
 def load_user(id):
     return User.query.get(int(id))
 ```
+-------------------------
+### UserMixin
+#### main.py
+```
+class User(UserMixin, db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    email = db.Column(db.String(100), nullable=False)
+    password = db.Column(db.String(50), nullable=False)
+    type = db.Column(db.String(50), nullable=False)
+```
 --------------------------
 ### Login User
 #### main.py (login and register route)
