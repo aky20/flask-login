@@ -1,10 +1,12 @@
 # flask-login
 
 ### Authentication (register and login website)
+- flask wtf form for secure request
 - simple register and login (check email and password)
 - hashing and salting password (in python werkzeug.security)
 - route authentication with flask-login or flask session
 - flash message
+- use ssl
 ---------------------------------
 ## Hashing and Salting Password
 ### Import 
