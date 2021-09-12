@@ -102,14 +102,18 @@ def logout():
     logout_user()
     return redirect(url_for("home"))
 ```
-
+------------------------------
 ### Secure Cookie
 #### app config
 ```
 SESSION_COOKIE_SECURE = True
 SESSION_COOKIE_HTTPONLY = True
 ```
-
+#### main.py
+```
+login_manager.session_protection = "strong"
+```
+-------------------------------
 ---------------------------------
 ------------------
 ## Flask Messages
